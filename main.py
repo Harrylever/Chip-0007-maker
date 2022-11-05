@@ -208,7 +208,7 @@ def cs_json_generator(file_path):
 
 def csv_output_generator(csv_header, json_format):
 	jsonObject = json_format
-	
+
 	print("")
 	filename = input("Enter name for output csv file. e.g preferredname.output.csv: ")
 	with open(f'{current_directory}/output/{filename}.output.csv', 'w') as output_file:
@@ -220,8 +220,6 @@ def csv_output_generator(csv_header, json_format):
 		# write the data
 		writer.writerows(jsonObject)
 
-# csv_header, jsonObj = cs_json_generator('csvfiles/nft_naming_2.csv')
-# csv_output_generator(csv_header, jsonObj)
 
 def nft_csv_hash_generator():
 	print("NFT CSV HASH Generator....")
