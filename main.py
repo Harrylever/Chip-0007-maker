@@ -208,7 +208,7 @@ def cs_json_generator(file_path):
 
 def csv_output_generator(csv_header, json_format):
 	jsonObject = json_format
-	# print(jsonObject)
+	
 	print("")
 	filename = input("Enter name for output csv file. e.g preferredname.output.csv: ")
 	with open(f'{current_directory}/output/{filename}.output.csv', 'w') as output_file:
