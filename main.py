@@ -211,7 +211,7 @@ def csv_output_generator(csv_header, json_format):
 	# print(jsonObject)
 	print("")
 	filename = input("Enter name for output csv file. e.g preferredname.output.csv: ")
-	with open(f'{current_directory}/{filename}.output.csv', 'w') as output_file:
+	with open(f'{current_directory}/output/{filename}.output.csv', 'w') as output_file:
 		writer = csv.writer(output_file)
 
 		# write the header
