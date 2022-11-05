@@ -19,7 +19,7 @@ Install packages with pip
 
 ## Usage/Examples
 
-To usage the python script: Run 
+For usage of the python script: Run 
 ```python
 python main.py
 ```
