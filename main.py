@@ -219,12 +219,13 @@ def csv_output_generator(csv_header, json_format):
 
 		# write the data
 		writer.writerows(jsonObject)
+	print(f"csv file created at 'output/{filename}.output.csv'")
 
 
 def nft_csv_hash_generator():
 	print("NFT CSV HASH Generator....")
 	print("Author: Ukanah Dean")
-	print("Github Repo: https://github.com/Harrylever/repo.git/")
+	print("Github Repo: https://github.com/Harrylever/Chip-0007-maker.git/")
 	print("See Readme File for usage or type 'help'\n")
 	print("\t1. Choose CSV file from local storage")
 	print("\t2. Download CSV file from online")
@@ -237,6 +238,9 @@ def nft_csv_hash_generator():
 	elif option_ == "2":
 		url_path = input("Enter file url: ")
 		download_csv(url_path, csv_new_name)
+	else:
+		print("Invalid response!")
+		sys.exit()
 
 	csv_header, full_csv_list = cs_json_generator(f"{current_directory}/csvfiles/{csv_new_name}.csv")
 	
